@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Set-Location 'c:\\\\\\\\Users\\\\\\\\bomzh\\\\\\\\Documents\\\\\\\\Coding\\\\\\\\laravel\\\\\\\\crm'; php artisan config:clear 2>&1\")"
+    ]
+  }
+}
