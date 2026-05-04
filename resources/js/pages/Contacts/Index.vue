@@ -2,6 +2,7 @@
 import { Head, Link, router } from '@inertiajs/vue3';
 import { Building2, Mail, MoreHorizontal, Phone, Search, UserPlus } from 'lucide-vue-next';
 import { ref, watch } from 'vue';
+import ExportButton from '@/components/ExportButton.vue';
 import { Button } from '@/components/ui/button';
 import {
     DropdownMenu,
@@ -68,12 +69,15 @@ function confirmDelete(contact: Contact) {
                 <h1 class="text-xl font-semibold tracking-tight sm:text-2xl">Contacts</h1>
                 <p class="text-sm text-muted-foreground">{{ contacts.total }} total</p>
             </div>
-            <Button size="sm" as-child>
-                <Link :href="create()">
-                    <UserPlus class="h-4 w-4 sm:mr-2" />
-                    <span class="hidden sm:inline">New Contact</span>
-                </Link>
-            </Button>
+            <div class="flex items-center gap-2">
+                <ExportButton />
+                <Button size="sm" as-child>
+                    <Link :href="create()">
+                        <UserPlus class="h-4 w-4 sm:mr-2" />
+                        <span class="hidden sm:inline">New Contact</span>
+                    </Link>
+                </Button>
+            </div>
         </div>
 
         <!-- Search -->
