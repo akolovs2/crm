@@ -5,7 +5,7 @@ Laravel based CRM system wired with Vue thru Inertia. Project for improving my t
 ## Stack
 
 - **Laravel 13** + Fortify
-- **Vue 3** — `<script setup>` + TypeScript
+- **Vue 3**
 - **Inertia.js v3** — no separate API
 - **Tailwind CSS v4** + Reka UI (shadcn-style components)
 - **Wayfinder** — type-safe route helpers auto-generated from PHP routes
